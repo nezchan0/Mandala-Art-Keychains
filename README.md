@@ -38,14 +38,12 @@ The results were stunning, and the showcase helped sell every single keychain. �
 
 ---
 
-## 🛍️ Contact Info (for showcase page)
-
-- 📧 Email: [phyrnna05@gmail.com](mailto:phyrnna05@gmail.com)  
-- 📸 Instagram: [@novaa_lunaa](https://www.instagram.com/novaa_lunaa?igsh=am9rdXF2Mm03ZDI=)
-
----
-
 ## 📸 Preview
 
 ![Live Page Preview](./LivePagePreview.png)
+
+---
+## 👤 Author
+
+Alok Kumar Maurya – Developer | Email: [alok05.maurya@gmail.com](alok05.maurya@gmail.com)
 
