@@ -51,6 +51,3 @@ Alok Kumar Maurya – Developer | Email: [alok05.maurya@gmail.com](mailto:alok05
 
 ---
 
-## 🏷️ Topics / Tags
-
-`HTML` `CSS` `TailwindCSS` `JavaScript` `Product Showcase` `Mandala Art` `Portfolio` `Responsive Design` `Photography` `UI/UX`
