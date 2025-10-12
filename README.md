@@ -33,7 +33,7 @@ The results were stunning, and the showcase helped sell every single keychain. �
 
 ## 🚀 Live Demo
 
-🔗 **Live Site:** [View on GitHub Pages](https://YOUR_GITHUB_USERNAME.github.io/Mandala-Art-Keychains)
+🔗 **Live Site:** [View on GitHub Pages](https://nezchan0.github.io/Mandala-Art-Keychains/)
 
 *(Replace with your actual live link after deployment)*
 
