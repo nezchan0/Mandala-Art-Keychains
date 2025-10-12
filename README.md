@@ -35,7 +35,6 @@ The results were stunning, and the showcase helped sell every single keychain. ð
 
 ðŸ”— **Live Site:** [View on GitHub Pages](https://nezchan0.github.io/Mandala-Art-Keychains/)
 
-*(Replace with your actual live link after deployment)*
 
 ---
 
@@ -48,4 +47,5 @@ The results were stunning, and the showcase helped sell every single keychain. ð
 
 ## ðŸ“¸ Preview
 
-*(You can upload a screenshot here after deploying!)*  
+![Live Page Preview](./LivePagePreview.png)
+
