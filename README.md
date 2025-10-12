@@ -6,17 +6,19 @@ A handcrafted product showcase built with **HTML**, **Tailwind CSS**, and **Vani
 
 ## 🌸 Project Story
 
-This isn’t just a webpage — it’s a creative collaboration!
+This project isn’t just a webpage — it’s a creative collaboration!  
 
-My friend designed and painted unique Mandala art keychains.  
-To help her share them online, I built this interactive product showcase where users can:
+My friend designed and painted **unique Mandala art keychains** and wanted to showcase them to sell directly to friends, family, and college peers — without the hassle of listing them on e-commerce platforms.  
+
+To help her, I built this **interactive product showcase** that highlights the beauty of each keychain. Users can:  
 
 - Browse each keychain with smooth image transitions ✨  
 - View multiple angles using a custom-built modal viewer 🔍  
-- Enjoy a soothing gradient UI inspired by the colors of Mandala art 🎨  
+- Enjoy a visually soothing gradient UI inspired by Mandala art 🎨  
 
-We also conducted our own **prop photography session** — styling, lighting, and capturing each piece carefully.  
-The results were stunning, and the showcase helped sell every single keychain. 💫
+We also organized a **prop photography session**, carefully styling and photographing each keychain to make them look their absolute best.  
+
+After creating the webpage, we shared the link with friends, family, and peers — and the result was amazing: **all the keychains were sold within a week!** 💫  
 
 ---
 
@@ -35,7 +37,6 @@ The results were stunning, and the showcase helped sell every single keychain. �
 
 🔗 **Live Site:** [View on GitHub Pages](https://nezchan0.github.io/Mandala-Art-Keychains/)
 
-
 ---
 
 ## 📸 Preview
@@ -43,7 +44,13 @@ The results were stunning, and the showcase helped sell every single keychain. �
 ![Live Page Preview](./LivePagePreview.png)
 
 ---
+
 ## 👤 Author
 
-Alok Kumar Maurya – Developer | Email: [alok05.maurya@gmail.com](alok05.maurya@gmail.com)
+Alok Kumar Maurya – Developer | Email: [alok05.maurya@gmail.com](mailto:alok05.maurya@gmail.com)
 
+---
+
+## 🏷️ Topics / Tags
+
+`HTML` `CSS` `TailwindCSS` `JavaScript` `Product Showcase` `Mandala Art` `Portfolio` `Responsive Design` `Photography` `UI/UX`
