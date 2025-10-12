@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mandal Art Keychains — Product Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in { animation: fadeIn 0.28s ease-in-out; }
+    .fade-out { animation: fadeOut 0.28s ease-in-out forwards; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; transform: scale(1); }
+      to { opacity: 0; transform: scale(0.98); }
+    }
+    .arrow-btn {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-100 via-white to-blue-100 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-pink-500 to-blue-500 text-white p-5 shadow-lg">
+    <h1 class="text-3xl font-bold text-center tracking-wide drop-shadow-md">
+      Mandal Art Keychains — Product Showcase
+    </h1>
+  </header>
+
+  <!-- Product Grid -->
+  <main class="container mx-auto px-4 py-10 flex-1">
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 mt-auto text-center text-sm">
+    <h2 class="text-2xl font-bold mb-3">🛍️ To Buy Contact at:</h2>
+    <p class="mt-2">
+      <a href="mailto:phyrnna05@gmail.com" class=" hover:underline">📧 phyrnna05@gmail.com</a>
+    </p>
+    <p class="mt-1">
+      <a href="https://www.instagram.com/novaa_lunaa?igsh=am9rdXF2Mm03ZDI=" target="_blank" class=" hover:underline">📸 Instagram: @novaa_lunaa</a>
+    </p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 items-center justify-center px-4">
+    <button id="modal-close" class="absolute top-6 right-6 text-white text-3xl hover:text-red-400" aria-label="Close (Esc)">
+      ✖
+    </button>
+    <button id="modal-prev" class="absolute left-6 md:left-12 top-1/2 transform -translate-y-1/2 rounded-full p-3 arrow-btn text-white text-2xl shadow-lg hover:scale-105" aria-label="Previous (Left)">
+      ‹
+    </button>
+    <button id="modal-next" class="absolute right-6 md:right-12 top-1/2 transform -translate-y-1/2 rounded-full p-3 arrow-btn text-white text-2xl shadow-lg hover:scale-105" aria-label="Next (Right)">
+      ›
+    </button>
+
+    <div class="relative max-w-[95%] max-h-[85%] w-full flex flex-col items-center">
+      <img id="modal-img" src="" alt="Product large" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl fade-in" />
+      <div id="modal-thumbnails" class="mt-4 flex flex-wrap justify-center gap-3"></div>
+    </div>
+  </div>
+
+  <script>
+    const products = [
+      { id: 4, name: "Chaitra (ಚೈತ್ರ) – Spring Season 🌸", colors: "from-purple-100 to-indigo-200", images: ["product4-img1.jpg", "product4-img2.jpg", "product4-img3.jpg", "product4-img4.jpg"] },
+      { id: 5, name: "Deepa (ದೀಪ) – Light/Lamp 🪔", colors: "from-red-100 to-orange-200", images: ["product5-img1.jpg", "product5-img2.jpg"] },
+      { id: 6, name: "Aaraga (ಆರಗ) – Breeze 🍃", colors: "from-yellow-100 to-pink-200", images: ["product6-img1.jpg", "product6-img2.jpg"] },
+      { id: 7, name: "Agni (ಅಗ್ನಿ) – Fire 🔥", colors: "from-green-100 to-yellow-100", images: ["product7-img1.jpg", "product7-img2.jpg"] },
+      { id: 8, name: "Ravi (ರವಿ) – Sun 🌞", colors: "from-yellow-100 to-orange-100", images: ["product8-img1.jpg", "product8-img2.jpg"] },
+      { id: 9, name: "Manjari (ಮಂಜರಿ) – A cluster of flowers 🌺", colors: "from-blue-50 to-green-100", images: ["product9-img1.jpg", "product9-img2.jpg", "product9-img3.jpg"] },
+      { id: 10, name: "Aalaya (ಆಲಯ) – Abode 🏡", colors: "from-pink-100 to-blue-200", images: ["product10-img1.jpg", "product10-img2.jpg", "product10-img3.jpg", "product10-img4.jpg"] },
+      { id: 11, name: "Nisarga (ನಿಸರ್ಗ) – Nature 🌿", colors: "from-green-100 to-teal-200", images: ["product11-img1.jpg", "product11-img2.jpg"] },
+      { id: 12, name: "Belaku (ಬೆಳಕು) – Radiance ✨", colors: "from-orange-100 to-yellow-200", images: ["product12-img1.jpg", "product12-img2.jpg", "product12-img3.jpg"] },
+      { id: 1, name: "Mallige (ಮಲ್ಲಿಗೆ) – Jasmine 🌼", colors: "from-pink-100 to-blue-200", images: ["product1-img1.jpg", "product1-img2.jpg", "product1-img3.jpg"] },
+      { id: 13, name: "Tejas (ತೇಜಸ್) – Brilliance 🔥", colors: "from-green-100 to-teal-200", images: ["product13-img1.jpg", "product13-img2.jpg"] },
+      { id: 3, name: "Hamsa (ಹಂಸ) – Swan 🦢", colors: "from-orange-100 to-yellow-200", images: ["product3-img1.jpg", "product3-img2.jpg"] },
+      { id: 2, name: "Gagana (ಗಗನ) – Sky ☁️", colors: "from-green-100 to-teal-200", images: ["product2-img1.jpg", "product2-img2.jpg"] }
+    ];
+
+    const grid = document.getElementById('product-grid');
+    products.forEach(product => {
+      const card = document.createElement('article');
+      card.className = `bg-gradient-to-r ${product.colors} p-4 rounded-xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 duration-300`;
+      const mainImg = document.createElement('img');
+      mainImg.src = `static/images/${product.images[0]}`;
+      mainImg.alt = product.name;
+      mainImg.id = `main-img-${product.id}`;
+      mainImg.dataset.productId = product.id;
+      mainImg.dataset.index = 0;
+      mainImg.className = 'w-full h-56 object-cover rounded-md cursor-pointer';
+      mainImg.addEventListener('click', () => openModal(product.id, parseInt(mainImg.dataset.index, 10)));
+      const thumbRow = document.createElement('div');
+      thumbRow.className = 'flex justify-center mt-3 space-x-2';
+      product.images.forEach((imgName, idx) => {
+        const t = document.createElement('img');
+        t.src = `static/images/${imgName}`;
+        t.alt = product.name + ' thumbnail';
+        t.className = 'w-12 h-12 object-cover rounded-md cursor-pointer hover:scale-110 transition';
+        t.addEventListener('click', () => {
+          const main = document.getElementById(`main-img-${product.id}`);
+          if (main) {
+            main.src = `static/images/${imgName}`;
+            main.dataset.index = idx;
+          }
+        });
+        thumbRow.appendChild(t);
+      });
+      const title = document.createElement('h2');
+      title.className = 'text-lg font-semibold mt-4 text-center';
+      title.innerText = product.name;
+      card.appendChild(mainImg);
+      card.appendChild(thumbRow);
+      card.appendChild(title);
+      grid.appendChild(card);
+    });
+
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalThumbs = document.getElementById('modal-thumbnails');
+    const modalClose = document.getElementById('modal-close');
+    const modalPrev = document.getElementById('modal-prev');
+    const modalNext = document.getElementById('modal-next');
+
+    let currentProduct = null, currentIndex = 0;
+
+    function openModal(productId, startIndex = 0) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+      currentProduct = product;
+      currentIndex = startIndex;
+      modalImg.src = `static/images/${product.images[currentIndex]}`;
+      modalThumbs.innerHTML = product.images.map((img, idx) =>
+        `<img src="static/images/${img}" data-idx="${idx}" class="w-16 h-16 object-cover rounded-md cursor-pointer border-2 ${idx===currentIndex ? 'border-yellow-300' : 'border-white'} hover:scale-110 transition" loading="lazy">`
+      ).join('');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      Array.from(modalThumbs.children).forEach(node => node.addEventListener('click', () => goToIndex(parseInt(node.dataset.idx, 10))));
+      document.addEventListener('keydown', keyboardHandler);
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.removeEventListener('keydown', keyboardHandler);
+    }
+
+    function goToIndex(idx) {
+      if (!currentProduct) return;
+      const n = currentProduct.images.length;
+      currentIndex = ((idx % n) + n) % n;
+      modalImg.src = `static/images/${currentProduct.images[currentIndex]}`;
+      Array.from(modalThumbs.children).forEach((el, i) => {
+        el.classList.toggle('border-yellow-300', i === currentIndex);
+        el.classList.toggle('border-white', i !== currentIndex);
+      });
+    }
+
+    function prevImage() { goToIndex(currentIndex - 1); }
+    function nextImage() { goToIndex(currentIndex + 1); }
+    function keyboardHandler(e) {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+    }
+    modalClose.addEventListener('click', closeModal);
+    modalPrev.addEventListener('click', prevImage);
+    modalNext.addEventListener('click', nextImage);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  </script>
+</body>
+</html>
