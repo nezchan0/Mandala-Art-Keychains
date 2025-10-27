@@ -45,6 +45,13 @@ After creating the webpage, we shared the link with friends, family, and peers �
 
 ---
 
+## ⚖️ License
+
+- 🧩 **Code:** Licensed under the [MIT License](./LICENSE)
+- 🖼️ **Images & Artwork:** © 2025 Alok Kumar Maurya — All Rights Reserved  
+  (Reproduction, redistribution, or reuse is prohibited without permission.)
+---
+
 ## 👤 Author
 
 Alok Kumar Maurya – Developer | Email: [alok05.maurya@gmail.com](mailto:alok05.maurya@gmail.com)
